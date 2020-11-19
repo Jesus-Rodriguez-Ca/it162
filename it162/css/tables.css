@@ -1,0 +1,41 @@
+/* Styles for tables */
+table{
+    border-collapse: collapse;
+    border: 1px solid #000;
+    width: 80%;
+    margin:auto:
+}
+
+tr{
+   vertical-align: top; 
+}
+
+
+tr:nth-child(even), thead tr{
+    background-color: limegreen;
+    color:black;
+}
+thead th{
+    background-color: limegreen;
+    align-content: center;
+}
+td, th {
+    border:1px solid #000;
+    padding: .5em;
+}
+.col1 {
+    width:10%;
+} 
+table.client { 
+    margin: 40px auto;
+}
+table.client th{
+    text-align: left;
+    width: 30%;
+}
+table.audience {
+    margin: 40px auto;
+}
+table.audience th{
+    width: 33.3%;
+}
