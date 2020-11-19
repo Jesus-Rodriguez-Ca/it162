@@ -4,7 +4,7 @@ This is a website created as an assignmenn of my IT162 class.
 
 ## Installation
 
-* Broser
+* Browser
 * Text editor
 * LocalHost
 
