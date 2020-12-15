@@ -1,76 +1,28 @@
 /* Global rules */
-.nav-toggle {
-    display:none;
+.topnav {
+    margin: auto;
+    background-color: rgb(95,95,95);
+    overflow: auto;
 }
-.nav-toggle-label {
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin-left:  1em;
-    height: 100%;
-    display: flex;
-    align-items: center;
-}
-.nav-toggle-label span,
-.nav-toggle-label span::before,
-.nav-toggle-label span::after{
+
+.topnav a {
+    float: left;
     display: block;
-    background: white;
-    height: 2px;
-    width: 2em;
-    border-radius: 2px;
-    position: relative;
-}
-.nav-toggle-label span::before,
-.nav-toggle-label span::after{
-    content: '';
-    position: absolute;
-}
-.nav-toggle-label span::before{
-    bottom: 7px;
-}
-.nav-toggle-label span::after{
-    top: 7px;
-}
-nav{
-    position: absolute;
-    text-align: left;
-    top: 100%;
-    left: 0;
-    background:#2d2d2dd5;
-    width: 100%;
-    transform: scale(1,0);
-    transform-origin: top;
-    transition: transform 400ms ease-in-out;
-}
-nav ul{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-nav li{
-    margin-bottom: 1em;
-    margin-left: 1em;
-}
-nav a{
-    color:white;
+    color: whitesmoke;
+    text-align: center;
+    padding: 12px 12px;
     text-decoration: none;
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    opacity: 0;
-    transition: opacity 150ms ease-in-out 150ms;
+    text-transform: capitalize;
+    font-size: 16px;
 }
-nav a:hover{
-    color:rgba(238, 46, 39, 0.897);
+
+.topnav a.hover, .active {
+    background-color: forestgreen;
 }
-.nav-toggle:checked ~ nav{
-    transform: scale(1,1);
+
+.topnav .icon {
+    display: none;
 }
-.nav-toggle:checked ~ nav a {
-    opacity: 1;
-    transition: opacity 250ms ease-in-out 250ms;
-}
-/*Navigation bar ends here*/
 
 /* Responsive rules - apply when screen width is less than 1200px */
 
@@ -106,13 +58,6 @@ nav a:hover{
 @media all and (min-width:1200px) {
     .topnav {
         width: 81%;
-        
-    }
-    .topnav ul{
-        list-style-type: none;
-    }
-    nav a{
-        text-decoration: none;
     }
 }
 

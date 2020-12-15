@@ -1,0 +1,476 @@
+*, *::before, *::after {
+    box-sizing: border-box
+    
+}
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:700|Roboto:300,700');
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+
+
+.text p:target { background: red; }
+
+
+.button {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  background: #61892F;
+  padding: .5em 1.25em;
+}
+
+.portfolio {
+  display: grid;
+  grid: auto / repeat(auto-fit, minmax(15em, 1fr));
+  grid-gap: 1em;
+  background: white;
+  padding: 7em 4em;
+  margin-bottom: 10px;
+}
+
+.portfolio__item {
+  position: relative;
+  flex-basis: 30%;
+  margin: 0;
+  padding: 0;
+  background: #6B6E70;
+}
+
+.portfolio__desc {
+  padding: 1.5em;
+}
+
+.portfolio__title {
+  font-family: 'Roboto Condensed', sans-srif;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 0;
+  color:white;
+}
+
+.portfolio__image,
+.portfolio-lightbox__image{
+  width: 100%;
+  display: block;
+}
+
+.portfolio-lightbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0,1); 
+  transition: transform 150ms ease-in-out;
+  transform-origin: right; 
+  padding: 2em;
+  position: fixed;
+  top: 0;
+  left: 0;
+  color: white;
+  background: rgba(0, 0, 0, .5);
+ box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .25);
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+}
+
+.portfolio-lightbox:target {
+  transform: scale(1,1);
+  transform-origin: left; 
+
+}
+
+.portfolio-lightbox__content {
+  width: 75%;
+  padding: 1em;
+  background: black;
+  position: relative;
+}
+
+.portfolio__lightbox__image { margin-bottom: 1em; }
+
+.close {
+  position: absolute;
+  right: -1em;
+  top: -1em;
+  border: white 2px solid;
+  display: flex;
+  width: 2em;
+  height: 2em;
+  background: red;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.close::after {
+  content: 'x';
+  color: white;
+}
+main.tutorial
+{
+    width: 100%;
+    display: inline-flex;
+    
+}
+img.vmset{
+    margin: 16px 20px 5px 200px;
+    height: 30%;
+    width: 13%;
+}
+html{
+    height: 100%;
+}
+
+    body {
+         margin: 10px;
+         font-family: sans-serif, Arial, Helvetica ;
+         font-size: 1.125em;
+         line-height: 1.6;
+         color: black;
+         background: white;
+         min-height: 100%;
+
+         display: flex;
+         flex-direction: column;
+    }
+
+
+/*     Footer starts here*/
+
+footer{
+    background: #333;
+    color: white;
+    padding-bottom: 1em;
+    margin-top: auto;
+    height: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    clear: both;
+    
+}
+
+    a{
+     text-align: center;
+     color: #86C232;
+    }
+
+   
+    
+
+/*Navigan Bar starts here*/ 
+
+header{
+    background-color: #2d2d2d;
+    text-align: center;
+    position: relative; 
+    z-index: 1;
+    width: 100%;
+}
+
+.nav-toggle {
+    display:none;
+}
+.nav-toggle-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left:  1em;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after{
+    display: block;
+    background: white;
+    height: 2px;
+    width: 2em;
+    border-radius: 2px;
+    position: relative;
+}
+.nav-toggle-label span::before,
+.nav-toggle-label span::after{
+    content: '';
+    position: absolute;
+}
+.nav-toggle-label span::before{
+    bottom: 7px;
+}
+.nav-toggle-label span::after{
+    top: 7px;
+}
+nav{
+    position: absolute;
+    text-align: left;
+    top: 100%;
+    left: 0;
+    background:#2d2d2dd5;
+    width: 100%;
+    transform: scale(1,0);
+    transform-origin: top;
+    transition: transform 400ms ease-in-out;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+nav li{
+    margin-bottom: 1em;
+    margin-left: 1em;
+}
+nav a{
+    color:#86C232;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: opacity 150ms ease-in-out 150ms;
+}
+nav a:hover{
+    color:rgba(235, 238, 39, 0.897);
+}
+.nav-toggle:checked ~ nav{
+    transform: scale(1,1);
+}
+.nav-toggle:checked ~ nav a {
+    opacity: 1;
+    transition: opacity 250ms ease-in-out 250ms;
+}
+/*Navigation bar ends here*/
+
+/*Main image*/
+img.desktop {
+    margin-top:85px;
+    width: 100%
+}
+/*Content*/
+h1{
+    text-align: center;
+    color:rgb(240, 247, 144);
+}
+h2{
+    text-align: center; 
+    color:White; 
+}
+h3{
+    color: black;
+    font-weight: 600;
+    font-size: 1.2em;
+    text-align: center;
+}
+h2.main{
+    text-align: center;
+    color: black;
+    font-weight: 700;
+    font-size: 2em;
+    
+}
+.container{
+    display: grid;
+    grid: auto / repeat(auto-fit, minmax(15em, 1fr));
+    grid-gap: 1em;
+    padding: 4em 2em;
+    background-color: orange;
+    
+  }
+  .box{
+    position: relative;
+    flex-basis: 30%;
+    margin: 0;
+    padding: 0;
+    background: white;
+  }
+  #column1{
+    width: 100%;
+    display: block;
+  }
+  #column2{
+    width: 100%;
+    display: block;
+  }
+ 
+  footer a{
+      color:#86C232;
+  }
+
+    p{
+    text-align: center;
+
+    }
+
+
+/* Form starts here*/
+
+form{
+    background-color: rgb(110, 110, 109);
+    margin: 10px auto;
+    text-align: left;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #666666;
+    width: 500px;
+
+}
+label{
+    color:#85e204 ;
+}
+
+legend{
+    color: #85e204;
+}
+
+/*Map starts here*/
+
+.contact-in{
+    width: 80%;
+    height: auto;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0px 0px 10px 0px #666;
+}
+
+.contact-map{
+    width: 100%;
+    height: auto;
+    flex: 50%;
+}
+.contact-map iframe{
+    width: 100%;
+    height: 100%;
+    
+} 
+.contact-form{
+    width: 100%;
+    height: auto;
+    flex: 40%;
+    padding: 30px;
+    text-align: center;
+}
+.contact-form h2{
+    margin-bottom: 10px;
+}
+.contact-form-txt{
+    width: 100%;
+    height: 50px;
+    color: #000;
+    background: #fff;
+    border: 1px solid #bcbcbc;
+    border-radius: 10px;
+    outline: none;
+    margin-bottom: 20px;
+    padding: 15px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.contact-form-txtarea{
+    background: #ffffff;
+    font-size: 1.2em;
+    width: 100%;
+    height: 70px;
+    flex: 40px;
+    color: #000;
+    border: 1px solid #bcbcbc;
+    border-radius: 50px;
+    outline: none;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+
+
+/*Media query starts here*/
+@media screen and (min-width: 800px){
+    .nav-toggle-label{
+        display: none;
+    }
+    header{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 50px auto minmax(600px, 3fr) .3fr;
+    }
+    .logo{
+        grid-column: 2 / 3;
+        color:gold;
+    
+    }
+    .logo a{
+        text-decoration: none;
+        color:#86C232;
+        
+    }
+    
+    nav{
+        all: unset;
+        grid-column: 3 / 4;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    nav ul{
+        display: flex;
+        justify-content: flex-end; 
+    }
+    nav li{
+        margin-left: 3em;
+        margin-bottom: 0;
+            
+    }
+    
+    nav a {
+        opacity: 1;
+        position: relative;
+    }
+}
+nav a::before{
+    content: "";
+    display: block;
+    height: 5px;
+    background: black;
+    position: absolute;
+    top: 1em;
+    left:0;
+    right: 0;
+    transform: scale(0,1);
+    transform-origin: left;
+    transition: transform ease-in-out 250ms;
+}
+nav a:hover::before{
+    transform: scale(1,.35);
+}
+/*nav bar ends here*/
+
+
+
+
+p{
+  font-size: 20px 
+}
+
+
+
+footer i{
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    display: block;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    
+}
+

@@ -1,7 +1,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script type="text/javascript" src="https://www.google.com/recaptcha/api.js?hl=en"></script>
+    <script  src="https://www.google.com/recaptcha/api.js?hl=en"></script>
     <script>
-        /**
+        /**   type="text/javascript"
         * requires reCAPTCHA so user doesn't lose form data 
         *
         * https://stackoverflow.com/questions/27706594/how-can-i-make-recaptcha-a-required-field

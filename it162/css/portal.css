@@ -8,15 +8,6 @@ html {
     font-size: 0.95em;
     line-height: 1.5em;
 }
-
-/* font awesome icon styles */
-i.logo {
-    color:darkred; /* a less boring color */
-    text-shadow:1px 1px #ccc; /* gives the icon a little depth */
-    font-size:1.25em; /* font awesome icons are text, so make it a bit bigger */
-    margin-left:1%; /* this keeps the icon from being squeeezed to the left */
-}
-
 iframe{
     align-content: center 70%;
 }

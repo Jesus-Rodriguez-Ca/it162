@@ -1,11 +1,8 @@
 <?php
-
-$nav1['index.php'] ="Welcome";
-$nav1['big/index.php'] ="Big";
-$nav1['aia.php'] ="AIA";
-$nav1['flowchart.php'] ="Flowchart";
-$nav1['fp/index.php'] ="Final Project";
-$nav1['contactme.php'] ="Contact Jesus";
+$nav1['index.php'] ="Inicio";
+$nav1['galeria.php'] ="Galleria";
+$nav1['contactanos.php'] ="Contactanos";
+$nav1['ubicacion.php'] ="Ubicacion";
 
 
 /*
@@ -34,34 +31,44 @@ $logo_color = ''; //make logo_color an empty string by default
 switch(THIS_PAGE)
 {
     case 'index.php':
-    $title = "Jesus' IT162 Portal Website";
+    $title = "Inicio";
+    $subtitle = '¡Bienvenido a nuestro inicio!';
     $logo = "fa-home";
     break;
 
-    case 'aia.php':
-    $title = "Jesus' Final Project Audience, Issues and Approach Research";
-    $logo = "fa-universal-access";
-    $logo_color = ' style="color:#00f"';
+    case 'gallery.php':
+    $title = "Galeria";
+    $subtitle = 'Galeria de imagenes';
+    $logo = "fa-image";
+    /* $logo_color = ' style="color:#00f"'; */
     break;
         
-    case 'contactme.php':
-    $title = "Contact Jesus";
-    $logo = "fa-paper-plane-o";
-    $logo_color = ' style="color:#0f0"';
+    case 'contactanos.php':
+    $title = "Contactanos";
+    $subtitle = '¡Contactanos!';
+    $logo = "fa-calendar-alt";
+    /* $logo_color = ' style="color:#0f0"'; */
     break;
+
+    case 'ubicacion.php':
+        $title = "Ubicacion";
+        $subtitle = 'Ubicacion';
+        $logo = "fa-map-marker-alt";
+        /* $logo_color = ' style="color:#0f0"'; */
+        break;
         
-    default:    
+     default:    
     $title = THIS_PAGE;    
-    $logo = '';  
+    $logo = '';   
 }
 
 
 
-function makeLinks($linkArray)
+function makeLinks($linkArray) 
 {
     $myReturn ='';
 
-    foreach($linkArray as $url => $text)
+    foreach($linkArray as $url => $text) 
     {
         if($url == THIS_PAGE)
         {//selected page - add class reference
@@ -73,9 +80,5 @@ function makeLinks($linkArray)
       
     return $myReturn;    
 }
-
-
-
-
 
 ?>
